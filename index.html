@@ -12,14 +12,15 @@
         href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
   <main class="main">
-    <p id="add-task">
+    <section id="add-task">
       <label class="label label-new-task" for="new-task">Add Item</label>
       <div class="row-task">
         <input id="new-task"
             class="input task input-text" type="text">
         <button class="button">Add</button>
       </div>
-    </p>
+    </section>
+    <section id="todo">
     <h3 class="title">Todo</h3>
     <ul class="ul-tasks" id="incompleted-tasks">
       <li class="ul-tasks-item">
@@ -36,15 +37,18 @@
         <button class="button delete"><img class="img-delete" src="./remove.svg"></button>
       </li>
     </ul>
-    <h3 class="title">Completed</h3>
-    <ul class="ul-tasks" id="completed-tasks">
-      <li class="ul-tasks-item">
-        <input class="input input-checkbox" type="checkbox" checked><label class=" label task">See the Doctor</label>
-        <input type="text" class="input task input-text">
-        <button class="button edit">Edit</button>
-        <button class="button delete"><img class="img-delete" src="./remove.svg"></button>
-      </li>
-    </ul>
+    </section>
+    <section id="completed">
+      <h3 class="title">Completed</h3>
+      <ul class="ul-tasks" id="completed-tasks">
+        <li class="ul-tasks-item">
+          <input class="input input-checkbox" type="checkbox" checked><label class=" label task">See the Doctor</label>
+          <input type="text" class="input task input-text">
+          <button class="button edit">Edit</button>
+          <button class="button delete"><img class="img-delete" src="./remove.svg"></button>
+        </li>
+      </ul>
+    </section>
   </main>
 <script src="app.js"></script>
 </body>
